@@ -1,0 +1,29 @@
+
+.usermsg{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 100%;
+}
+
+.othersmsg{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.usermsg>.message{
+    background-image: linear-gradient(to right, #02849b, #34bfd8);
+    border-radius: 50px 0px 50px 50px;
+    padding: 15px;
+    color: #ffffff;
+    z-index: -1;
+    max-width: 70%;
+}
+
+.othersmsg>.message{
+    background-color: #ffffff;
+    border-radius: 0px 50px 50px 50px;
+    padding: 15px;
+    color: #000000;
+    z-index: -1;
+}

@@ -2,11 +2,8 @@
     width: 99%;
     height: 60px;
     background-image: linear-gradient(to right, #cc99ff, #ffcccc);
-
     border-radius: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
+    margin:0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     padding: 5px;
@@ -32,6 +29,7 @@
     justify-content: center;
     transition: all 0.3s ease-in-out;
     border-color: black;
+    margin:5px;
 }
 
 #dropdown-button:hover {
@@ -39,29 +37,33 @@
 }
 
 #dropdown-list {
-    position: absolute;
-    top: 50px;
-    right: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+			position: absolute;
+			top: 50px;
+			right: 10px;
+		  content: "";
+      position: absolute;
+      background-color: #cc99ff;
+      padding-left: 5px;
+      z-index: -1;
+      border-radius: 10%;
+      color: white; 
+			min-width: 30%;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			transform: scaleX(0);
+			transform-origin: right top;
+			transition: transform 0.3s ease-in-out;
+      z-index: 100;
+		}
 
-    content: "";
-    position: absolute;
-    background: linear-gradient(to bottom, #ffcccc, #ffcccc, #ffcccc, #ffcccc, #cc99ff, #e6f8fc);
-    z-index: -1;
-    border-radius: 15%;
-
-    color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    transform: scaleX(0);
-    transform-origin: right top;
-    transition: transform 0.3s ease-in-out;
-}
-
-#dropdown-list li a {
+#dropdown-list div a {
     color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+  font-size: 20px;
 }
 
 #dropdown-button:focus+#dropdown-list,

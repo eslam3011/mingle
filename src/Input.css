@@ -23,12 +23,16 @@
     color: black;
     border: 1px solid transparent;
     margin: 5px;
-    outline: none
+    outline: none;
+    padding-top: 10px;
+    font-size: 15px;
+    resize: none;
 }
 
 #a {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -40,9 +44,15 @@ img{
 }
 
 .chat-container{
-    position: absolute;
-    top: 65px;
     width: 100%;
+    height: calc(100svh - 130px);
     display: flex;
     flex-direction: column;
+    overflow: auto;
+}
+
+.container{
+  position: fixed;
+  top: 0px;
+  width: 100%;
 }

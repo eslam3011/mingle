@@ -11,7 +11,11 @@ const Header = () => {
                         <a>معلومات المطور</a>
                     </div>
                     <div>
-                        <a href="https://www.facebook.com/profile.php?id=100065172561645">Facebook</a>
+                        <a href="https://www.facebook.com/profile.php?id=100065172561645">Developer</a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.facebook.com/profile.php?id=100009638650491">Developer</a>
                     </div>
                     <div>
                         <a href="#">WhatsApp</a>

@@ -1,0 +1,20 @@
+body {
+    height: 98vh;
+    width: 98vw;
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, #ffcccc, #ffcccc, #ffcccc, #ffcccc, #cc99ff, #e6f8fc);
+    filter: blur(100px);
+    /* تعديل قيمة الـ blur حسب الضبابية المطلوبة */
+    z-index: -1;
+}
